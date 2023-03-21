@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <main class="container">
+
+         <input type="search" id="searching" name="searcing" list="searchings" placeholder="Search city" autocomplete="off">
+         <datalist id="searchings">
+            
+         </datalist>
+
+
+
+
+        <article id="current-forecast">
+            <h1 class="city">City Name</h1>
+            <p class="temp">---</p>
+            <p class="description">Description</p>
+            <p class="min-max-temp">H L</p>
+        </article>
+
+        <article id="hourly-forecast">
+            <h1>Hourly forecast</h1>
+            <section class="hourly">
+                <article>
+                    <h3 class="hourly-time">---</h3>
+                    <p>Icon</p>
+                    <p class="hourly-temp">---</p>
+                </article>`
+            </section>
+        </article>
+
+        <article id="five-day-forecast">
+            <h1>5 day forecast</h1>
+            <section class="fivedayforecast">
+                <article class="daywiseforecast">
+                    <h3 class="fivedaydate">Today</h3>
+                    <p>Icon</p>
+                    <p class="temp_low">---</p>
+                    <p class="temp_high">---</p>
+                </article>
+            </section>
+        </article>
+    </article>
+        <article id="feels-like">
+            <h1>Feels like</h1>
+            <p class="feels">---</p>
+        </article>
+        <article id="humidity">
+            <h1>Humidity</h1>
+            <p class="humidity">---</p>
+        </article>
+    </main>
+    <script src="weather.js"></script>
+</body>
+</html>
